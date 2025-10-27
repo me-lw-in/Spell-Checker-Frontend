@@ -45,7 +45,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8001/correct",
+        "https://spell-checker-lhl0.onrender.com/correct",
         { text: inputText },
         {
           headers: { "Content-Type": "application/json" },
