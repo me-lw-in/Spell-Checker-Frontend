@@ -45,11 +45,10 @@ function App() {
 
     try {
       const response = await axios.post(
-        "https://spell-checker-lhl0.onrender.com/correct",
+        "https://spell-checker-backend.onrender.com/correct",
         { text: inputText },
         {
-          headers: { "Content-Type": "application/json" },
-          timeout: 30000,
+          headers: { "Content-Type": "application/json" }
         }
       );
 
